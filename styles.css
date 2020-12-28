@@ -4,22 +4,24 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
   background: #f7f5f0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Section Styles */
 .name {
 	padding-bottom: 20px;
-	font-size: 2em;
+	font-size: 1.75em;
+	background: #f7f5f0;
+
 }
 .main-nav {
   width: 100%;
-  background: #fafafa;
   min-height: 30px;
   padding: 10px;
   text-align: center;
@@ -27,7 +29,7 @@ body {
   border: /*solid red 1px;*/ /*CHANGE*/
 }
 
-.nav li {
+.main-nav li {
 	text-align: center;
 	background: #fff;
 	margin-top: 6px;
@@ -37,17 +39,14 @@ body {
 	padding: 10px;
 }
 
-.nav {
+.main-nav {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
-
-.nav a {
-  /*transition: all .5s;*/
 }
-.nav a:hover {
+.main-nav a:hover {
   color: #808080;
 }
 
@@ -57,12 +56,6 @@ a {
 }
 
 header {
-  overflow: hidden;
-  padding-top: 30px;
-  /*border: solid red 1px;*/ /*CHANGE*/
-  background: #fafafa;
-}
-header {
   line-height: 1.5;
 }
 .profilepic {
@@ -71,6 +64,7 @@ header {
   margin: auto;
   display: block;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .info {
@@ -100,8 +94,8 @@ header {
 }
 
 h1 {
-	max-width: 85%;
-	display: inline-block;
+	max-width: 100%;
+	display: block;
 	color: #525252;
 	margin-top: 15px;
 	margin-bottom: -5px;
@@ -127,6 +121,16 @@ footer ul li{
   max-width: 90%;
 }
 
+#bottomname {
+	float:left;
+	color: #525252;
+	font-weight: bold;
+}
+
+#b2t {
+	font-weight: bold;
+}
+
 .footernav {
 	border-top: solid lightgrey 1px;
 	max-width: 100%;
@@ -141,34 +145,52 @@ footer ul li{
   Media Queries
 ==================================== */
 
-@media (min-width: 768px) {
-
-.wrap {
-	min-height: calc(100vh - 89px); /*100vh is the viewport, 89px is the height of the footermain-footer*/
+@media (min-width: 769px) {
 
 .container {
- 	max-width: 1024px;
- 	margin: 0 auto;
- 	width: 85%;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1023px;
+}
+
+.name {
+	text-align: center;
+}
+
+.main-nav {
+	float: right;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 15px;
+	background: none;
 }
 
 .profilepic {
 	float:right;
+	display: inline;
 }
 
-.name {
-  float: left;
+.card {
+	float: left;
+	width: 50%;
 }
 
+/*.footer {
+	margin-top: 10px;
+	padding-top: 50px;
+	display: block;
+}*/
 
-.nav {
-  float: right; /*float nav bar to right up and down*/
+	/* ---- Float clearfix ---- */
+
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
 }
-
-.nav li {
-  float: left; /*floats nav li's to the right side by side*/
-  margin-left: 12px;
-}
-
- }
 

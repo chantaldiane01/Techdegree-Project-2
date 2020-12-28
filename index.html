@@ -6,56 +6,58 @@
 		<meta name= "viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-<body class="container wrap">
+<body>
 
-	<nav class="main-nav">
-		<h1 class="name">Chantal Baxter</h1>
-		<ul class="nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
+	<header class="main-header">
+    <div class= "container clearfix">
+		<h1 class="name"><a href="#">Chantal Baxter</a></h1>
+		<ul class="main-nav">
+			<li><a href="#top">home</a></li>
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">contact</a></li>
 		</ul>
-	</nav>
+      </div>
+	</header><!--/.main-header-->   
 
-	<header class="#">
-		<img src="images/profile-image.png" alt="profile picture of me, Chantal" class="profilepic">
-		<section class="info"> Hi! I am a front-end developer who loves responsive design and CSS. I recently finished learning front-end wed development at Treehouse and I am excited to put all my skills to use </section>
-	</header>
+	<div class="banner">
 
-	<main class="pages flex">
+		<span class="info"><img class="profilepic" src="images/profile-image.png" alt="picture of me, Chantal"> Hi! I am a front-end developer who loves responsive design and CSS. I recently finished learning front-end wed development at Treehouse and I am excited to put all my skills to use</span>
+	</div> <!--banner-->
+
+	<main class="pages">
 		<h1 class="portfolio">Portfolio</h1>
 
-		<section class="card">
+		<section class="first card">
 			<img src="images/portfolio-1.png" alt="marketing page screenshot" class="bodyimage">
 			<h1>Marketing Page</h1>
 			<p>This project shows the front pafe of a marketing website meant for a specific business I'm interested in.
 		</section>
 
-		<section class="card">
+		<section class="second card">
 			<img src="images/portfolio-2.png" alt="search page screenshot" class="bodyimage">
 			<h1>Search Page</h1>
 			<p>This project searches through a specific database to find information that the user is trying to look up.
 		</section>
 
-		<section class="card">
+		<section class="third card">
 			<img src="images/portfolio-3.png" alt="travel app page screenshot" class="bodyimage">
 			<h1>Travel App</h1>
 			<p>This project compares travel times based on different transportation methods and tells you the best one.
 		</section>
 
-		<section class="card">
+		<section class="fourth card">
 			<img src="images/portfolio-4.png" alt="favorite spots screenshot" class="bodyimage">
 			<h1>Map of Favorite Spots</h1>
 			<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
 		</section>
 
-		<section class="card">
+		<section class="fifth card">
 			<img src="images/portfolio-5.png" alt="photo gallery page screenshot" class="bodyimage">
 			<h1>Photo Gallery</h1>
 			<p>This project shows pictures from a recent trop to the viewer and allows them to easily navigate through photos.
 		</section>
 
-		<section class="card">
+		<section class="sixth card">
 			<img src="images/portfolio-6.png" alt="calculator page screenshot" class="bodyimage">
 			<h1>Calculator</h1>
 			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
@@ -66,16 +68,19 @@
 		<h1 class="contact">contact</h1>
 		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
 		</p>
-		<p class="footer">
+		<p>
 			<p>Phone: (555) 123-4567</p>
 			<p>E-mail: chantaldiane01@gmail.com</p>
 		</ul>
 
 		<nav class="footernav">
 			<ul class="nav">
-       			<li class="bottomname">Chantal Baxter</li>
-       			<li><a href="#">Back to Top</a></li>
-      </ul>
-
+       			<li id="bottomname">Chantal Baxter</li>
+       			<li id="b2t"><a href="#top">Back to Top</a></li>
+     		 </ul>
+     	</nav>
 
 	</footer>
+</div>
+</body>
+</html>
