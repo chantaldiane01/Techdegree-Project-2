@@ -161,9 +161,6 @@ footer ul li{
 	display: block;
 
 }
-.main-nav {
-	float: right;
-}
 
 .main-nav li {
 	display: inline-block;
@@ -204,8 +201,24 @@ footer ul li{
 .card {
 	float: left;
 	width: 33.3%;
-	}
+}
 
+.main-header {
+	padding-top: 50px;
+}
+.main-nav {
+	flex-direction: column-reverse;
+}
+
+.main-nav li {
+	float: right;
+	
+}
+
+.name {
+	float: left;
+	display: inline;
+}
 
 
 }
