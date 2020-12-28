@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Chantal's Mobile-First Responsive Layout</title>
-		<link rel= "stylesheet" href="styles.css">
+		<link rel= "stylesheet" href="css/styles.css">
 		<meta name= "viewport" content="width=device-width, initial-scale=1">
 	</head>
 
@@ -13,8 +13,8 @@
 		<h1 class="name"><a href="#">Chantal Baxter</a></h1>
 		<ul class="main-nav">
 			<li><a href="#top">home</a></li>
-			<li><a href="#">portfolio</a></li>
-			<li><a href="#">contact</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#contact">contact</a></li>
 		</ul>
       </div>
 	</header><!--/.main-header-->   
@@ -24,8 +24,8 @@
 		<span class="info"><img class="profilepic" src="images/profile-image.png" alt="picture of me, Chantal"> Hi! I am a front-end developer who loves responsive design and CSS. I recently finished learning front-end wed development at Treehouse and I am excited to put all my skills to use</span>
 	</div> <!--banner-->
 
-	<main class="pages">
-		<h1 class="portfolio">Portfolio</h1>
+	<main class="pages clearfix">
+		<h1 class="portfolio"><a href="#portfolio">Portfolio</a></h1>
 
 		<section class="first card">
 			<img src="images/portfolio-1.png" alt="marketing page screenshot" class="bodyimage">
@@ -64,15 +64,15 @@
 		</section>
 	</main>
 
-	<footer>
-		<h1 class="contact">contact</h1>
+	<div class="more-info">
+		<h1 id="contact"><a href="#contact">contact</a></h1>
 		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
 		</p>
-		<p>
-			<p>Phone: (555) 123-4567</p>
+			<p>Phone: (555) 123-4567</p><br>
 			<p>E-mail: chantaldiane01@gmail.com</p>
 		</ul>
-
+	</div>
+		<footer>
 		<nav class="footernav">
 			<ul class="nav">
        			<li id="bottomname">Chantal Baxter</li>
