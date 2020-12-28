@@ -81,8 +81,7 @@ header {
 	font-size: 1.25em;
 	text-transform: uppercase;
 	padding-top: 50px;
-	padding-bottom: 50px;
-}
+	padding-bottom: 50px;}
 
 .bodyimage {
 	max-width: 90%;
@@ -157,6 +156,11 @@ footer ul li{
 	text-align: center;
 }
 
+.info {
+	float: left;
+	display: block;
+
+}
 .main-nav {
 	float: right;
 }
@@ -177,6 +181,9 @@ footer ul li{
 	width: 50%;
 }
 
+.portfolio {
+	margin: 50px;
+}
 
 	/* ---- Float clearfix ---- */
 
@@ -196,7 +203,7 @@ footer ul li{
 
 .card {
 	float: left;
-	width: 30%;
+	width: 33.3%;
 	}
 
 
