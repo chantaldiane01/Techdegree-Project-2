@@ -138,7 +138,6 @@ footer ul li{
 .footernav {
 	border-top: solid lightgrey 1px;
 	max-width: 100%;
-	align-content: center;
 	margin: 15px;
 }
 .largerscreens {
@@ -197,14 +196,17 @@ footer ul li{
 	display: block;
 }
 .largerscreens {
-	display: inline;
-	float: right;
-	text-transform: uppercase;
+	display: block;
+	max-width: 100%;
 	border-top: solid lightgrey 1px;
 }
 
-.footernav{
+.footernav {
 	display: none;
+}
+.navlarger {
+	float:right;
+	text-transform: uppercase;
 }
 
 	/* ---- Float clearfix ---- */
