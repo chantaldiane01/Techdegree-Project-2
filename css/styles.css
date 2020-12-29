@@ -1,4 +1,4 @@
-/*/* Global Layout Set-up */
+/* Global Layout Set-up */
 * { 
   box-sizing: border-box;
 }
@@ -6,7 +6,7 @@
 body {
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Sofia, sans-serif";
   color: #222;
   background: #f7f5f0;
   width: 90%;
@@ -15,9 +15,10 @@ body {
 
 /* Section Styles */
 .name {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-size: 1.75em;
 	background: #f7f5f0;
+	background: linear-gradient(to right, darkgrey, darkgrey 55%, lightgrey 45%);
 
 }
 .main-nav {
@@ -26,7 +27,6 @@ body {
   padding: 10px;
   text-align: center;
   z-index: 999;
-  border: /*solid red 1px;*/ /*CHANGE*/
 }
 
 .main-nav li {
@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-}
+
 .main-nav a:hover {
   color: #808080;
 }
@@ -53,13 +53,13 @@ body {
 a {
 	text-decoration: none;
 	color: #525252;
+	background: linear-gradient(to right, darkgrey, darkgrey 50%, lightgrey 50%);
 }
 
 header {
   line-height: 1.5;
 }
 .profilepic {
-  /*border: solid red 1px;*/ /*CHANGE*/
   max-width: 65%;
   margin: auto;
   display: block;
@@ -77,7 +77,7 @@ header {
 	padding-bottom: 20px;
 }
 
-.portfolio {
+#portfolio {
 	font-size: 1.25em;
 	text-transform: uppercase;
 	padding-top: 50px;
@@ -112,6 +112,10 @@ p {
 	padding-top: 30px;
 }
 
+#email {
+	text-transform: uppercase;
+}
+
 .footer {
 	display: inline-block;
 }
@@ -120,13 +124,14 @@ footer ul li{
   max-width: 90%;
 }
 
-#bottomname {
+#bottomnamemobile {
 	float:left;
 	color: #525252;
 	font-weight: bold;
+	background: linear-gradient(to right, darkgrey, darkgrey 55%, lightgrey 45%);
 }
 
-#b2t {
+#b2tmobile {
 	font-weight: bold;
 }
 
@@ -135,6 +140,9 @@ footer ul li{
 	max-width: 100%;
 	align-content: center;
 	margin: 15px;
+}
+.largerscreens {
+	display: none;
 }
 
 .clearfix {
@@ -184,6 +192,21 @@ footer ul li{
 	margin: 50px;
 }
 
+.bottomnamelarger {
+	float: left;
+	display: block;
+}
+.largerscreens {
+	display: inline;
+	float: right;
+	text-transform: uppercase;
+	border-top: solid lightgrey 1px;
+}
+
+.footernav{
+	display: none;
+}
+
 	/* ---- Float clearfix ---- */
 
 .clearfix::after {
@@ -216,7 +239,6 @@ footer ul li{
 	display: inline-block;
 	margin-left: 15px;
 	background: none;
-	float: right;
 	max-width: 50%;
 }
 .name {
@@ -224,7 +246,9 @@ footer ul li{
 	display: inline;
 	max-width: 25%;
 }
-
+.main-nav {
+  text-align: right;
+}
 
 }
 

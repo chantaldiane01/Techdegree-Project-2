@@ -4,13 +4,14 @@
 		<title>Chantal's Mobile-First Responsive Layout</title>
 		<link rel= "stylesheet" href="css/styles.css">
 		<meta name= "viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 	</head>
 
 <body>
 
 	<header class="main-header">
     <div class= "container clearfix">
-		<h1 class="name"><a href="#">Chantal Baxter</a></h1>
+		<h1 class="name">Chantal Baxter</h1>
 		<ul class="main-nav">
 			<li><a href="#top">home</a></li>
 			<li><a href="#portfolio">portfolio</a></li>
@@ -25,12 +26,12 @@
 	</div> <!--banner-->
 
 	<main class="pages clearfix">
-		<h1 class="portfolio"><a href="#portfolio">Portfolio</a></h1>
+		<h1 id="portfolio"><a href="#portfolio">Portfolio</a></h1>
 
 		<section class="first card">
 			<img src="images/portfolio-1.png" alt="marketing page screenshot" class="bodyimage">
 			<h1>Marketing Page</h1>
-			<p>This project shows the front pafe of a marketing website meant for a specific business I'm interested in.
+			<p>This project shows the front pafe of a marketing website meant for a specific business I'm interested in.</p>
 		</section>
 
 		<section class="second card">
@@ -67,20 +68,26 @@
 	<div class="more-info">
 		<h1 id="contact"><a href="#contact">contact</a></h1>
 		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
-		</p>
+		</p><br>
 			<p>Phone: (555) 123-4567</p><br>
-			<p>E-mail: chantaldiane01@gmail.com</p>
-		</ul>
+			<p id="email"><a href="mailto:chantaldiane01@gmail.com">&rightarrow;Click here to send me an email&leftarrow;</a></p>
 	</div>
 		<footer>
 		<nav class="footernav">
 			<ul class="nav">
-       			<li id="bottomname">Chantal Baxter</li>
-       			<li id="b2t"><a href="#top">Back to Top</a></li>
+       			<li id="bottomnamemobile">Chantal Baxter</li>
+       			<li id="b2tmobile"><a href="#top">Back to Top</a></li>
      		 </ul>
      	</nav>
-
 	</footer>
-</div>
+
+	<footer>
+		<nav class="largerscreens">
+			<h1 class="bottomnamelarger">Chantal Baxter</h1>
+			<ul class="navlarger">
+				<li><a href="#top">home</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contact">contact</a></li>		
+			</nav>
 </body>
 </html>
